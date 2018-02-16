@@ -1,0 +1,87 @@
+
+body{
+    background-color: aqua;
+}
+.openTable {
+	width: 100px;
+	height: 100px;
+	background: rgb(124, 124, 124);
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction:column;
+    text-align: center;
+}
+.reservedTable {
+	width: 100px;
+	height: 100px;
+	background: rgb(39, 39, 39);
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction:column;
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+     
+}
+#reserve{
+    position: absolute;
+    top: 150px;
+    left:150px;
+    width: 300px;
+    height: 250px;
+    background: rgb(255, 255, 255);
+    box-shadow:2px 3px 5px #999;
+    border-radius: 2%;
+    
+}
+#reserve p:first-child{
+    color: #777;
+    font: 14px/100% arial, sans-serif;
+    position: absolute;
+    right: 5px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #fff;
+    top: 5px;
+}
+#reserve p, input{
+    margin-left: 5px;
+}
+#reserve input{
+    width: 290px;
+}
+
+#reserve p:nth-child(3){
+    margin-left: 5px;
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size: 20px;
+}
+
+.tableContainer{
+   
+    display:flex;
+    height: 500px;
+    max-width: 375px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.main{
+    display:flex;
+    height: 900px;
+    max-width: 768px;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+
+}
