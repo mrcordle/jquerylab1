@@ -1,11 +1,43 @@
+.main{
+    display: flex;
+    height: 100%;
+    min-width: 300px;
+    flex-direction: column;
+    margin:auto;
+}
 
 body{
-    background-color: aqua;
+    background-color: rgb(110, 110, 110);
+
+    
 }
+h1 { color: rgb(119, 0, 0); 
+    font-family: 'Open Sans Condensed', sans-serif; 
+    font-size: 64px; 
+    font-weight: 700; 
+    line-height: 64px; 
+    margin: 0 0 0; 
+    padding: 20px 30px; 
+    text-align: center; 
+    text-transform: uppercase;
+    text-shadow: 47px 15px 4px rgba(150, 150, 150, 1); 
+}
+
+
+h2 { color: rgba(107, 1, 1, 0.726); 
+    font-family: 'Open Sans Condensed', sans-serif; 
+    font-size: 24px; 
+    font-weight: 700; 
+    line-height: 48px; 
+    margin: 0 0 24px; 
+    padding: 0 30px; 
+    text-align: center; 
+    text-transform: uppercase; }
 .openTable {
-	width: 100px;
-	height: 100px;
-	background: rgb(124, 124, 124);
+	width: 50px;
+	height: 50px;
+    background: rgb(124, 124, 124);
+    color: black;
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
     border-radius: 50px;
@@ -14,11 +46,13 @@ body{
     align-content:center;
     flex-direction:column;
     text-align: center;
+    cursor: pointer;
 }
 .reservedTable {
-	width: 100px;
-	height: 100px;
-	background: rgb(39, 39, 39);
+	width: 50px;
+	height: 50px;
+    background: rgb(39, 39, 39);
+    color: rgb(124, 124, 124);
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
     border-radius: 50px;
@@ -27,40 +61,46 @@ body{
     align-content:center;
     flex-direction:column;
     text-align: center;
+    cursor: not-allowed;
+   
 }
 
 .hidden{
     display: none;
      
 }
-#reserve{
+
+#reserve {
     position: absolute;
     top: 150px;
-    left:150px;
+    width: 100%;
+}
+#reserve div {
     width: 300px;
     height: 250px;
     background: rgb(255, 255, 255);
     box-shadow:2px 3px 5px #999;
     border-radius: 2%;
-    
+    margin: auto;
 }
-#reserve p:first-child{
+#exit {
     color: #777;
     font: 14px/100% arial, sans-serif;
-    position: absolute;
-    right: 5px;
+    float: right;
+    margin-right: 5px;
     text-decoration: none;
     text-shadow: 0 1px 0 #fff;
-    top: 5px;
+
+    cursor: pointer;
 }
-#reserve p, input{
+#reserve div p, input{
     margin-left: 5px;
 }
-#reserve input{
+#reserve div input{
     width: 290px;
 }
 
-#reserve p:nth-child(3){
+#reserve div p:nth-child(3){
     margin-left: 5px;
     color: red;
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
@@ -68,20 +108,28 @@ body{
 }
 
 .tableContainer{
-   
     display:flex;
-    height: 500px;
-    max-width: 375px;
+    height: 200px;
+    max-width: 180px;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: white;
+    border-radius: 5%;
+    padding: 15px;
+    margin:auto;
 
 }
-.main{
-    display:flex;
-    height: 900px;
-    max-width: 768px;
-    flex-direction: column;
-    text-align: center;
-    align-content: center;
 
+.reservedTable {
+    position: relative;
+}
+
+.reservedTable:hover div {
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 75px;
+    background: rgb(255, 255, 255);
+    box-shadow:2px 3px 5px rgba(4, 0, 255, 0.671);
+    border-radius: 2%;
 }
